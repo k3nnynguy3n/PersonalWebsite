@@ -1,0 +1,23 @@
+.header {
+    background-color: var(--navy);
+    color: var(--cream);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 1rem;
+    z-index: 1000;
+  }
+  
+  .header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .header a {
+    color: var(--cream);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
