@@ -1,23 +1,23 @@
 .header {
-    background-color: var(--navy);
-    color: var(--cream);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    padding: 1rem;
-    z-index: 1000;
-  }
-  
-  .header ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-  }
-  
-  .header a {
-    color: var(--cream);
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
+  background-color: var(--navy-dark);
+  color: var(--cream);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.navList a {
+  text-decoration: none;
+  color: var(--cream);
+  font-weight: bold;
+}

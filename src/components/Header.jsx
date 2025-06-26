@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header className="header">
       <nav>
-        <ul>
+        <ul className="navList">
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
