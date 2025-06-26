@@ -1,7 +1,9 @@
-.contact {
-    padding: 4rem 2rem;
-    background-color: var(--navy);
-    color: var(--cream);
-    text-align: center;
-  }
-  
+.section {
+  min-height: 100vh;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
