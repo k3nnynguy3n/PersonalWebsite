@@ -1,14 +1,18 @@
 :root {
-    --navy: #001f3f;
-    --cream: #f5f5dc;
-    --white: #ffffff;
-  }
-  
-  body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: var(--cream);
-    color: var(--navy);
-    scroll-behavior: smooth;
-  }
-  
+  --navy: #001f3f;
+  --navy-dark: #000d1a;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--cream);
+  color: var(--navy);
+  scroll-behavior: smooth;
+}
