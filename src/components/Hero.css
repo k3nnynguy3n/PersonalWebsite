@@ -1,19 +1,99 @@
 .hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--navy);
-    color: var(--cream);
-  }
-  
-  .animated-text {
-    font-size: 3rem;
-    animation: float 3s ease-in-out infinite;
-  }
-  
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-15px); }
-  }
-  
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 0 3rem;
+}
+
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #051a32;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding-top: 2rem;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text h3 {
+  color: #010147;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-btn {
+  background-color: rgb(7, 9, 52);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-image {
+  flex: 1;
+  max-width: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  height: 300px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.blob-bg {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  background: linear-gradient(135deg, #180531, #1c96e2);
+  border-radius: 50% 60% 55% 45%;
+  top: 0;
+  z-index: 1;
+  filter: blur(30px);
+}
