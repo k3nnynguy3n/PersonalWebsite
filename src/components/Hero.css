@@ -1,10 +1,10 @@
 .hero {
-  min-height: 100vh;
-  background-color: #ffffff;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 0 3rem;
-  padding-top: 100px;
+  justify-content: center;
+  padding: 100px 3rem 0;
+  background-color: #ffffff;
 }
 
 .hero-header {
@@ -45,10 +45,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-grow: 1;
-  flex-wrap: wrap;
+  flex: 1;
   gap: 3rem;
-  padding-top: 2rem;
+  height: 100%;
 }
 
 .hero-text {
@@ -59,6 +58,7 @@
 .hero-text h1 {
   font-size: 2.8rem;
   margin-bottom: 1rem;
+  color: #001f3f;
 }
 
 .hero-text h3 {
@@ -69,6 +69,7 @@
 .hero-text p {
   font-size: 1.1rem;
   margin-bottom: 2rem;
+  color: #001f3f;
 }
 
 .contact-btn {
@@ -78,30 +79,37 @@
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
+  transition: background 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: #010147;
 }
 
 .hero-image {
   flex: 1;
-  max-width: 400px;
-  position: relative;
+  max-width: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .hero-image img {
-  height: 300px;
-  border-radius: 50%;
+  height: 80vh;
+  object-fit: cover;
+  border-radius: 50% / 30%;
+  box-shadow: 0 0 60px rgba(28, 150, 226, 0.4);
   z-index: 2;
 }
 
+
 .blob-bg {
   position: absolute;
-  width: 340px;
-  height: 340px;
+  width: 450px;
+  height: 80vh;
   background: linear-gradient(135deg, #180531, #1c96e2);
-  border-radius: 50% 60% 55% 45%;
-  top: 0;
+  border-radius: 50% / 30%;
   z-index: 1;
-  filter: blur(30px);
+  filter: blur(60px);
 }
