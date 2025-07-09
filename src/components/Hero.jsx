@@ -1,6 +1,6 @@
 import './Hero.css';
 // import logo from '../assets/logo.png';
-// import profile from '../assets/profile.png';
+import profile from '../assets/IMG_6305_Original.jpg';
 
 export default function Hero() {
   return (
@@ -20,12 +20,12 @@ export default function Hero() {
         <div className="hero-text">
           <h1>Hello! I'm glad you're here!</h1>
           <h3>I'm Kenny Nguyen</h3>
-          <p>I’m an aspiring software engineer who loves uncovering the logic behind complex systems and transforming that understanding into real world solutions. </p>
+          <p>I’m an aspiring software engineer who enjoys uncovering the logic behind complex systems and working with real-world data to solve practical problems with visible, meaningful impact.</p>
           <a href="#contact" className="contact-btn">Contact Me</a>
         </div>
         <div className="hero-image">
           <div className="blob-bg"></div>
-        {/*  <img src={profile} alt="Kenny Nguyen" /> */}
+        {  <img src={profile} alt="Kenny Nguyen" />}
         </div>
       </div>
     </section>
